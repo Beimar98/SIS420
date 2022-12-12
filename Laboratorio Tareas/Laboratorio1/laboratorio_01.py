@@ -37,12 +37,15 @@ def crear_mapa_laberinto(numero_filas, numero_columnas, numero_paredes, numero_e
 #                 numero_paredes_generadas += 1
 #             else:
 #                 fila_mapa_laberinto.append(' ')
+
 ########################################
+#adicionar simbolo
             fila_mapa_laberinto.append('#')
         mapa_laberinto.append(fila_mapa_laberinto)
         
 #Se ubica aleatoriamente un punto de inicio y a partir de ese punto se llenan espacios
     numero_espacios_generados = 0
+    #posicion aleatoria ramdom randrange para filas y columnas para el escenario del laberinto
     fila_posicion_actual = random.randrange(numero_filas)
     columna_posicion_actual = random.randrange(numero_columnas)
     mapa_laberinto[fila_posicion_actual][columna_posicion_actual] = ' '
@@ -51,8 +54,9 @@ def crear_mapa_laberinto(numero_filas, numero_columnas, numero_paredes, numero_e
 #Se ubica una ficha de manera aleatoria
     ficha_fila = random.randrange(numero_filas)
     ficha_columnas = random.randrange(numero_columnas)
+    #ficha toma posision fila y columna
     mapa_laberinto[fila_posicion_actual][columna_posicion_actual] = '@'
-
+#condision de que los <36 libres
     while numero_espacios_generados < numero_espacios:
         direccion = random.randrange(4)
         if direccion == 0 and fila_posicion_actual > 0:
@@ -76,7 +80,9 @@ print("Universitario : Ceron Beimar Miguel")
 numero_filas = int(input('Introduzca el número de filas del laberinto: '))
 numero_columnas = int(input('Introduzca el número de columnas del laberinto: '))
 numero_paredes = int(input('Introduzca el número de paredes del laberinto: '))
+# 7*8-20=56-20=36
 numero_espacios = numero_filas * numero_columnas - numero_paredes
+
 
 laberinto = crear_mapa_laberinto(numero_filas, numero_columnas, numero_paredes, numero_espacios)
 
