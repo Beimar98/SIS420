@@ -1,0 +1,27 @@
+https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction
+10 columnas y 15000 filas
+
+1* 0.09 a 1 = Satisfactory Levels -> Niveles satisfactorios
+2* 0.36 a 1 = last evaluation -> última evaluación
+3* 2 a 7 = Number Project -> Proyecto Número 
+4* 96 a 310 = Average Monthly Hour -> Hora mensual promedio 
+5* 2 a 10 = Time Spent company-> gasto de Tiempo usado (Empresa de tiempo dedicado)
+6* 0 a 1 = Work accident -> Accidente laboral
+7* 0 a 1 left ( left the department)-> dejó el departamento
+8*  Promotion last 5 years -> Promoción últimos 5 años (ultimos dias trabajando) 
+9*  Department -> Departamento(sales, technical , hr, 
+accounting, soporte, management, IT, product_mng,
+ marketing,  RandD (Research and Development)))
+ventas, técnico, recursos humanos,
+contabilidad, soporte, gestión, informática, gestión de productos,
+ marketing, investigación y desarrollo
+10* Salary -> Salario (low, medium, high) medio bajo, alto
+
+satisfaction_level, last_evaluation, Work_accident
+
+
+
+
+
+
+
